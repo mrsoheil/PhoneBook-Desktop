@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="448.0" prefWidth="415.0" snapToPixel="false" style="-fx-background-color: #2A0033;" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.registerControler">
+<children>
+    <Pane layoutX="1.0" layoutY="78.0" prefHeight="365.0" prefWidth="415.0">
+        <children>
+            <TextField id="text-input" fx:id="et_name" alignment="CENTER_RIGHT" layoutX="97.0" layoutY="37.0" prefHeight="31.0" prefWidth="228.0" promptText="نام" style="-fx-border-color: #9643a9; -fx-background-color: #2A0033; -fx-border-radius: 20; -fx-background-insets: 0;" stylesheets="@style.css">
+                <font>
+                    <Font name="System Bold" size="15.0" />
+                </font>
+                <opaqueInsets>
+                    <Insets />
+                </opaqueInsets></TextField>
+            <TextField id="text-input" fx:id="et_family" alignment="CENTER_RIGHT" layoutX="97.0" layoutY="83.0" prefHeight="31.0" prefWidth="228.0" promptText="نام خانوادگی" style="-fx-border-color: #9643a9; -fx-background-color: #2A0033; -fx-border-radius: 20; -fx-background-insets: 0;" stylesheets="@style.css">
+                <font>
+                    <Font name="System Bold" size="15.0" />
+                </font>
+            </TextField>
+            <TextField id="text-input" fx:id="et_number" alignment="CENTER_RIGHT" layoutX="97.0" layoutY="129.0" prefHeight="31.0" prefWidth="228.0" promptText="شماره تلفن" style="-fx-border-color: #9643a9; -fx-background-color: #2A0033; -fx-border-radius: 20; -fx-background-insets: 0;" stylesheets="@style.css">
+                <font>
+                    <Font name="System Bold" size="15.0" />
+                </font>
+            </TextField>
+            <Button fx:id="btn_submit" contentDisplay="CENTER" layoutX="234.0" layoutY="286.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="80.0" style="-fx-background-color: #0aa43d;" text="ثبت" textFill="WHITE">
+                <font>
+                    <Font size="13.0" />
+                </font>
+                <cursor>
+                    <Cursor fx:constant="HAND" />
+                </cursor>
+            </Button>
+            <Separator cache="true" layoutX="57.0" layoutY="264.0" opacity="0.15" prefHeight="16.0" prefWidth="301.0">
+                <cursor>
+                    <Cursor fx:constant="DEFAULT" />
+                </cursor>
+            </Separator>
+            <Button fx:id="btn_cancel" contentDisplay="CENTER" layoutX="97.0" layoutY="286.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="80.0" style="-fx-background-color: #CE2010;" text="انصراف" textFill="WHITE">
+                <font>
+                    <Font size="13.0" />
+                </font>
+                <cursor>
+                    <Cursor fx:constant="HAND" />
+                </cursor>
+            </Button>
+            <ComboBox fx:id="comboBoxObj" layoutX="175.0" layoutY="183.0" nodeOrientation="RIGHT_TO_LEFT" prefWidth="150.0" promptText="نوع شماره" visibleRowCount="4">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ComboBox>
+        </children>
+    </Pane>
+    <Label layoutX="135.0" layoutY="54.0" text="صفحه ثبت اطلاعات" textAlignment="CENTER" textFill="WHITE">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </Label>
+    <Label layoutX="398.0" layoutY="4.0" onMouseClicked="#closeWindow" text="X" textFill="WHITE">
+        <font>
+            <Font name="System Bold" size="12.0" />
+        </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+    </Label>
+</children>
+</AnchorPane>
